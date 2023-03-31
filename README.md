@@ -14,7 +14,8 @@ Directions for use.
 2.	Make sure the Baud Rate is correct. 115200 is the default I've been using, but you can change it to whatever you want. This must match the value in the Arduino Serial.begin() code.
 3.	Click connect. The Arduino is now connected, and you can now begin receiving data and executing new profiles. 
 
-![StandAloneTreadmillSoftware](https://user-images.githubusercontent.com/63023502/229213606-667cb86f-1d85-430a-a004-c527782f1aef.JPG)
+
+![StandAloneTreadmillSoftware2](https://user-images.githubusercontent.com/63023502/229217074-8c4811ac-731b-45db-8864-ab88236ec35e.JPG)
 
 The run new profile tab is the one you want to use if you want the computer to be able to dictate the motor speeds in real-time. First input the desired speeds and times on the Profile Input table. Points can be added by clicking the blank boxes at the bottom of the table as needed. Once the desired points have been added, click the interpolate button. This interpolates the lines between the points at a rate of 25 points per second. The output of the interpolation is shown in the Interpolated Belt Speeds table. Next, the software converts this into a PWM value that the Arduino can use to dictate the motor speed. After clicking the interpolate button, the seconds two tables (Interpolated Belt Speeds and Motor PWM Values) are mostly for data verification and to make sure everything looks right (you shouldn't need to edit the data in these tables) If everything looks good click the Begin Profile button. This will begin sending the motor speeds to the Arduino at the times dictated by the millisecond timing values in the motor PWM table. Go to the Recieved Data tab to see the result. The Arduino should echo the motor speed it received and the time that it received it. The output should look something like this.
 
