@@ -5,6 +5,12 @@ VisualStudioVersion = 17.3.32811.315
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdruinoGUI", "AdruinoGUI\AdruinoGUI.csproj", "{DB59EEAA-E29E-409F-8A62-68D95754883F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{37F416F7-0B21-4B65-AE1D-B3DF9BBE4B34}"
+	ProjectSection(SolutionItems) = preProject
+		AdruinoGUI\bin\Release\data.csv = AdruinoGUI\bin\Release\data.csv
+		AdruinoGUI\data.csv = AdruinoGUI\data.csv
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
